@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="assets/images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,25 +19,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="font-[Bai_Jamjuree] text-lg flex flex-col justify-center items-center p-0 m-0"
+    class="font-[Bai_Jamjuree] text-lg flex flex-col justify-center items-center p-0 m-0 text-center text-[var(--grayish-blue)]"
   >
-    <header class="flex flex-col justify-center items-center">
+    <header class="flex flex-col justify-center items-center w-full">
       <div
-        class="h-64 w-full bg-[url(assets/images/bg-header-mobile.png)] bg-cover bg-no-repeat flex justify-center items-center"
+        class="h-72 w-full bg-[url(assets/images/bg-header-mobile.png)] bg-cover bg-no-repeat flex justify-center items-center"
       >
-        <img src="assets/images/logo.svg" alt="company logo" />
+        <img
+          src="assets/images/logo.svg"
+          alt="company logo"
+          class="w-auto h-32"
+        />
       </div>
     </header>
-    <main class="p-10">
+    <main class="pl-10 pr-10">
       <section>
-        <h2 class="font-semibold text-4xl">A history of everything you copy</h2>
-        <p>
+        <h2 class="pb-6 font-semibold text-3xl text-[var(--dark-grayish-blue)]">
+          A history of everything you copy
+        </h2>
+        <p class="pb-10">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+        <div class="flex flex-col justify-center items-center text-white">
+          <button class="w-full p-3 mb-5 bg-[var(--strong-cyan)] rounded-4xl">
+            Download for iOS
+          </button>
+          <button class="w-full p-3 mb-25 bg-[var(--light-blue)] rounded-4xl">
+            Download for Mac
+          </button>
         </div>
       </section>
       <section>

@@ -515,11 +515,35 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-25 {
+    margin-bottom: calc(var(--spacing) * 25);
+  }
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
+  }
   .flex {
     display: flex;
   }
-  .h-64 {
-    height: calc(var(--spacing) * 64);
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -533,6 +557,25 @@
   .justify-center {
     justify-content: center;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .border-r-10 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 10px;
+  }
+  .bg-\[var\(--light-blue\)\] {
+    background-color: var(--light-blue);
+  }
+  .bg-\[var\(--strong-cyan\)\] {
+    background-color: var(--strong-cyan);
+  }
   .bg-\[url\(assets\/images\/bg-header-mobile\.png\)\] {
     background-image: url(assets/images/bg-header-mobile.png);
   }
@@ -545,22 +588,45 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-\[Bai_Jamjuree\] {
     font-family: Bai Jamjuree;
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -570,6 +636,21 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[var\(--dark-grayish-blue\)\] {
+    color: var(--dark-grayish-blue);
+  }
+  .text-\[var\(--grayish-blue\)\] {
+    color: var(--grayish-blue);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+}
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
 }
 @keyframes spin {
   to {
@@ -596,6 +677,11 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
