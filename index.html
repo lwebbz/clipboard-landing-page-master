@@ -33,48 +33,57 @@
       </div>
     </header>
     <main class="pl-8 pr-8">
-      <section>
-        <h2 class="pb-6 font-semibold text-3xl text-[var(--dark-grayish-blue)]">
+      <section class="flex flex-col place-items-center">
+        <h2
+          class="pb-6 font-semibold text-3xl text-[var(--dark-grayish-blue)] md:text-[39px]"
+        >
           A history of everything you copy
         </h2>
-        <p class="pb-10">
+        <p class="pb-10 max-w-[655px]">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div class="flex flex-col justify-center items-center text-white">
+        <div
+          class="flex flex-col justify-center items-center text-white w-full max-w-lg md:flex-row md:gap-4 md:pb-32"
+        >
           <button
-            class="w-full p-3 mb-5 bg-[var(--strong-cyan)] rounded-4xl font-semibold"
+            class="w-full p-3 mb-5 bg-[var(--strong-cyan)] rounded-4xl font-semibold md:mb-0"
           >
             Download for iOS
           </button>
           <button
-            class="w-full p-3 mb-40 bg-[var(--light-blue)] rounded-4xl font-semibold"
+            class="w-full p-3 mb-40 bg-[var(--light-blue)] rounded-4xl font-semibold md:mb-0"
           >
             Download for Mac
           </button>
         </div>
       </section>
-      <section>
+      <section class="flex flex-col place-items-center">
         <h2 class="text-3xl font-semibold text-[var(--dark-grayish-blue)] pb-5">
           Keep track of your snippets
         </h2>
-        <p class="pb-15">
+        <p class="pb-15 max-w-[655px]">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <div class="flex flex-col justify-center">
-          <img
-            src="assets/images/image-computer.png"
-            alt="image of computer"
-            class="pb-10"
-          />
+        <div
+          class="flex flex-col justify-center md:flex-row md:gap-16 md:pb-12"
+        >
           <div>
+            <img
+              src="assets/images/image-computer.png"
+              alt="image of computer"
+              class="pb-10 md:w-full"
+            />
+          </div>
+          <div class="md:text-left md:max-w-96">
             <h4
-              class="font-semibold text-[var(--dark-grayish-blue)] text-2xl pb-2"
+              class="pt-16 font-semibold text-[var(--dark-grayish-blue)] text-2xl pb-2"
             >
               Quick Search
             </h4>
+            h4
             <p class="pb-10">
               Easily search your snippets by content, category, web address,
               application, and more.
@@ -99,24 +108,28 @@
           </div>
         </div>
       </section>
-      <h2 class="text-3xl font-semibold text-[var(--dark-grayish-blue)] pb-5">
-        Access clipboard anywhere
-      </h2>
-      <p class="pb-15">
-        Whether you’re on the go, or at your computer, you can access all your
-        Clipboard snippets in a few simple clicks.
-      </p>
-      <img
-        src="assets/images/image-devices.png"
-        alt="smartphone and tablet"
-        class="pb-20"
-      />
-      <h2 class="text-3xl font-semibold text-[var(--dark-grayish-blue)] pb-2">
-        Supercharge your workflow
-      </h2>
-      <p class="pb-25">We’ve got the tools to boost your productivity.</p>
-      <section>
-        <div class="flex flex-col justify-center items-center">
+      <section class="flex flex-col place-items-center">
+        <h2 class="text-3xl font-semibold text-[var(--dark-grayish-blue)] pb-5">
+          Access clipboard anywhere
+        </h2>
+        <p class="pb-15 max-w-[655px]">
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+        <img
+          src="assets/images/image-devices.png"
+          alt="smartphone and tablet"
+          class="pb-20"
+        />
+        <h2 class="text-3xl font-semibold text-[var(--dark-grayish-blue)] pb-2">
+          Supercharge your workflow
+        </h2>
+        <p class="pb-25">We’ve got the tools to boost your productivity.</p>
+      </section>
+      <section
+        class="flex flex-col justify-center items-center md:flex md:flex-row md:gap-5 md:grow-1 shrink-1 basis-1"
+      >
+        <div class="flex flex-col justify-center items-center max-w-96">
           <img
             src="assets/images/icon-blacklist.svg"
             alt="blacklist"
@@ -132,7 +145,7 @@
             by excluding certain sources.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center max-w-96">
           <img
             src="assets/images/icon-text.svg"
             alt="text"
@@ -147,7 +160,7 @@
             Remove unwanted formatting from copied text for a consistent look.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center max-w-96">
           <img
             src="assets/images/icon-preview.svg"
             alt="preview"
@@ -163,23 +176,23 @@
           </p>
         </div>
       </section>
-      <section class="flex flex-col justify-center items-center">
+      <section class="flex flex-col justify-center items-center md:flex-row">
         <img
           src="assets/images/logo-google.png"
           alt="google logo"
-          class="pb-15"
+          class="pb-15 h-auto w-35"
         />
         <img src="assets/images/logo-ibm.png" alt="ibm logo" class="pb-15" />
         <img
           src="assets/images/logo-microsoft.png"
           alt="microsoft logo"
-          class="pb-15"
+          class="pb-15 h-auto w-35"
         />
         <img src="assets/images/logo-hp.png" alt="hp logo" class="pb-15" />
         <img
           src="assets/images/logo-vector-graphics.png"
           alt="vector graphics logo"
-          class="pb-40"
+          class="pb-40 h-auto w-35"
         />
       </section>
       <section>
@@ -205,15 +218,19 @@
       </section>
     </main>
     <footer class="bg-gray-50 w-full flex flex-col justify-center items-center">
-      <img src="assets/images/logo.svg" alt="logo" />
-      <ul>
+      <img
+        src="assets/images/logo.svg"
+        alt="logo"
+        class="w-auto h-28 pt-12 mb-12"
+      />
+      <ul class="flex flex-col gap-5 text-[var(--dark-grayish-blue)] pb-14">
         <li>FAQs</li>
         <li>Contact Us</li>
         <li>Privacy Policy</li>
         <li>Press Kit</li>
         <li>Install Guide</li>
       </ul>
-      <ul>
+      <ul class="flex gap-10 pb-14">
         <li>
           <img src="assets/images/icon-facebook.svg" alt="facebook logo" />
         </li>
